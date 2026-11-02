@@ -12,6 +12,7 @@ public class PageObjectManager {
     private Upadatepage Upadatepage;
     private ApplyLeave ApplyLeave;
     private systemuser systemuser;
+    private EmpTimesheet EmpTimesheet;
 
     public PageObjectManager(Page page) {
         this.page = page;
@@ -75,5 +76,14 @@ public systemuser getsystemuser(){
 }
   return systemuser;
 }
+
+public EmpTimesheet getEmpTimesheet(){
+
+    if(EmpTimesheet == null){
+        EmpTimesheet=new EmpTimesheet(page);
+        }return  EmpTimesheet;
+}
+
+
 
 }

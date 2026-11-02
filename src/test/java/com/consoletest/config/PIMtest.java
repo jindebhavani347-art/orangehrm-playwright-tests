@@ -11,8 +11,8 @@ public class PIMtest extends baseclass {
 
     @Test
             public void pimtest() {
-        pageObjectManager.getLoginPage().navigateTo();
-        pageObjectManager.getLoginPage().login(ConfigReader.get("admin.username"), ConfigReader.get("admin.password"));
+       // pageObjectManager.getLoginPage().navigateTo();
+        //pageObjectManager.getLoginPage().login(ConfigReader.get("admin.username"), ConfigReader.get("admin.password"));
         pageObjectManager.getPIMPage().navigateTo();
         pageObjectManager.getPIMPage().click(pageObjectManager.getPIMPage().addbutton);
         assertTrue(page.url().contains("addEmployee"));

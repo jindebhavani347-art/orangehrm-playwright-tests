@@ -30,7 +30,4 @@ public class leavepage extends BasePage {
         return ConfigReader.get("leave.url");
     }
 
-
-
-
 }

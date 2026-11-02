@@ -11,6 +11,7 @@ public class PageObjectManager {
     private Createcontactpage Createcontactpage;
     private Upadatepage Upadatepage;
     private ApplyLeave ApplyLeave;
+    private systemuser systemuser;
 
     public PageObjectManager(Page page) {
         this.page = page;
@@ -66,6 +67,13 @@ public addLeaveEntitlement getaddLeaveEntitlement(){
             addLeaveEntitlement=new addLeaveEntitlement(page);
         }
         return addLeaveEntitlement;
+}
+
+public systemuser getsystemuser(){
+ if(systemuser == null){
+    systemuser=new systemuser(page);
+}
+  return systemuser;
 }
 
 }

@@ -38,8 +38,8 @@ public class LeaveApply extends baseclass {
     @Test
     public void negleavepage(){
 
-            pageObjectManager.getLoginPage().navigateTo();
-            pageObjectManager.getLoginPage().login(ConfigReader.get("admin.username"),ConfigReader.get("admin.password"));
+          //  pageObjectManager.getLoginPage().navigateTo();
+           // pageObjectManager.getLoginPage().login(ConfigReader.get("admin.username"),ConfigReader.get("admin.password"));
             pageObjectManager.getLeavepage().navigateTo();
             pageObjectManager.getLeavepage().clickentitlementdropdown();
             pageObjectManager.getLeavepage().entitelmentdropdown("Add Entitlements");

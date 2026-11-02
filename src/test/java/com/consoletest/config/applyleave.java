@@ -25,5 +25,11 @@ public class applyleave extends baseclass {
         pageObjectManager.getApplyLeave().popup();
     }
 
-
+@Test
+    public void negitiveapplyleave(){
+    pageObjectManager.getLeavepage().navigateTo();
+    pageObjectManager.getApplyLeave().navigateTo();
+    pageObjectManager.getApplyLeave().submit.click();
+    assertThat(page.getByText("Required").first()).isVisible();
+}
 }

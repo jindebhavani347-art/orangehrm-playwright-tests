@@ -25,6 +25,9 @@ public class constants {
     }
 
 
+    public void scrollpage(){
+        scrollpage();
+    }
     public static String date() {
         DateTimeFormatter formate = DateTimeFormatter.ofPattern("hhmmssSS");
         String time=LocalTime.now().format(formate);

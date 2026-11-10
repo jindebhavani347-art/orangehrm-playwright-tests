@@ -4,6 +4,7 @@ import com.microsoft.playwright.Page;
 
 public class PageObjectManager {
     private final Page page;
+    private viewDirectry viewDirectry;
     private addLeaveEntitlement addLeaveEntitlement;
     public leavepage leavepage;
     private LoginPage loginPage;
@@ -82,8 +83,14 @@ public EmpTimesheet getEmpTimesheet(){
     if(EmpTimesheet == null){
         EmpTimesheet=new EmpTimesheet(page);
         }return  EmpTimesheet;
+
 }
+public  viewDirectry getviewDirectry() {
+    if (viewDirectry == null) {
+        viewDirectry = new viewDirectry(page);
+    }
+    return viewDirectry;
 
-
+}
 
 }

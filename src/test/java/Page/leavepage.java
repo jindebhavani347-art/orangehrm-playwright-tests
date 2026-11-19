@@ -2,6 +2,7 @@ package Page;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.AriaRole;
 import util.ConfigReader;
 
 import java.time.LocalDateTime;
@@ -13,6 +14,7 @@ public class leavepage extends BasePage {
         super(page);
         Entitlementsbutton=page.locator("xpath=//span[normalize-space()='Entitlements']");
         applyleave=page.getByText("Assign Leave");
+        //page.getByRole(AriaRole.PARAGRAPH)
     }
 
     public void clickentitlementdropdown(){
